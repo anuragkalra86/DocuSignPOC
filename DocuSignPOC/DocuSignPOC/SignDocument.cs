@@ -11,6 +11,13 @@ namespace DocuSignPOC
         public static void Test()
         {
             Console.WriteLine("Hello Worjkjhhhhlld!");
+
+        }
+
+        public static bool SendForSigning(string customerName, string customerEmail, List<DocInfo> documents, out string statusMsg)
+        {
+            statusMsg = "All is well!";
+            return true;
         }
     }
 }
