@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using DocuSignPOC;
+using log4net;
 
 namespace HardCodedDocuSignAdapter
 {
@@ -12,8 +13,11 @@ namespace HardCodedDocuSignAdapter
     {
         static void Main(string[] args)
         {
-            SignDocument.Test();
-            Console.ReadKey();
+            ILog log = LogManager.GetLogger(typeof(Program));
+            log.Info("Started the program.");
+
+            //
+            
         }
     }
 }
