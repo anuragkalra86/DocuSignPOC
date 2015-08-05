@@ -16,7 +16,7 @@ namespace DocuSignPOC
 
         public static bool SendForSigning(string customerName, string customerEmail, List<DocInfo> documents, out string statusMsg)
         {
-            statusMsg = "All is well!";
+            statusMsg = "All is well!"; // 
             return true;
         }
     }
