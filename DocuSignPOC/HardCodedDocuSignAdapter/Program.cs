@@ -16,9 +16,9 @@ namespace HardCodedDocuSignAdapter
             ILog log = LogManager.GetLogger(typeof(Program));
             log.Info("Started the program.");
 
-            MakeRequest();
-            
-            Console.ReadKey();
+            //MakeRequest();
+            RequestSignatureOnDocument.DemoStandalone();
+            ////StandaloneSingleDoc.TestMe();
         }
 
         private static void MakeRequest()
@@ -72,7 +72,7 @@ namespace HardCodedDocuSignAdapter
             customerEmail = "kalra.25@osu.edu";
             docName1 = "GA_UM_Selection_Form";
             templateId1 = GetCorrespondingOverlayingTemplate(docName1);
-            document1 = new DocuSignPOC.DocInfo(docName1, templateId1, "pol1001");
+            document1 = new DocuSignPOC.DocInfo(docName1, templateId1, "pol1002");
             documents = new List<DocuSignPOC.DocInfo>();
             documents.Add(document1);
             bResponse = SignDocument.SendForSigning(customerName, customerEmail, documents, out statusMsg);
