@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocInfo.cs" />
+    <Compile Include="RoughCut\RequestSignatureOnDocument.cs" />
     <Compile Include="RoughCut\SignDocument.cs" />
+    <Compile Include="RoughCut\StandaloneSingleDoc.cs" />
     <Compile Include="SignDocument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
