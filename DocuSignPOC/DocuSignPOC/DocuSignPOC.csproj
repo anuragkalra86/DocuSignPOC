@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocInfo.cs" />
+    <Compile Include="RoughCut\SignDocument.cs" />
     <Compile Include="SignDocument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
